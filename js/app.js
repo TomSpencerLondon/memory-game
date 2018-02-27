@@ -37,22 +37,17 @@ function shuffle(array) {
  *    + if all cards have matched, display a message with the final score (put this functionality in another function that you call from this one)
  */
 
-let memoryValues = []; 
-let tilesFlipped = 0; 
-function newBoard(array){
-    tiles_flipped = 0;
-    let output = ""
-    let cards = ""
-    shuffled = shuffle(array);
-    for(var i = 0; i < array.length; i++){
-        createCard(shuffled[i])
-        $('.card').click(function(event) {
-            event.preventDefault(); 
-            $(event.target).addClass("open show"); 
-        });
-    }
+// function newBoard(array){
+//     shuffled = shuffle(array);
+//     for(var i = 0; i < array.length; i++){
+//         createCard(shuffled[i])
+//         $('.card').click(function(event) {
+//             event.preventDefault(); 
+//             $(event.target).addClass("open show"); 
+//         });
+//     }
     
-}
+// }
 
 // create individual card element
 function createCard(card){
@@ -64,9 +59,7 @@ function initGame(){
 }
 
 function populateCards(){
-
     shuffle(cardList).forEach((card) => {
-        console.log(card);
         createCard(card);
         $('.card').click(function(event) {
             event.preventDefault(); 
@@ -79,13 +72,11 @@ function populateCards(){
 
 
 $(window).ready(function(){
-    newBoard(cardList); 
+    populateCards(); 
     $('.fa-repeat').click(function(event){
         $('ul.deck').empty();
         event.preventDefault(); 
         initGame(); 
     });
-    console.log(cardList);
-
 
 });
