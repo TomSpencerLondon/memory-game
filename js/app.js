@@ -69,10 +69,8 @@ function populateCards(){
 }
 
 
-
-
 $(window).ready(function(){
-    populateCards(); 
+    initGame(); 
     $('.fa-repeat').click(function(event){
         $('ul.deck').empty();
         event.preventDefault(); 
