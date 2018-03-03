@@ -107,3 +107,82 @@ h1 {
     float: right;
     cursor: pointer;
 }
+
+.timer {
+    float: right;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.modal{
+    display:block;
+    position:fixed;
+    z-index:1;
+    left:0; 
+    top:0;
+    height:100%; 
+    width:100%;
+    overflow:auto;
+    background-color: rgba(0, 0,0, 0.5);
+}
+
+.modalContent{
+    background-color: #f4f4f4; 
+    margin: 20% auto;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0,0, 0.17), 0 7px 20px 0 rgba(0, 0,0, 0.17); 
+    animation-name: modalOpen;
+    animation-duration:1s; 
+    text-align: center;
+}
+
+.modalHeader .header{
+    text-align: center;
+}
+.modalHeader h2{
+    margin: 0;
+}
+
+.modalHeader{
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 15px;
+    color: #fff;
+}
+
+.modalFooter .footer{
+    text-align: center;
+}
+.modalFooter h3{
+    margin: 0;
+}
+
+.modalFooter{
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 15px;
+    color: #fff;
+}
+
+
+modalBody{
+    padding: 10px 20px;
+
+}
+
+.closeBtn{
+    color: #ccc;
+    float: right; 
+    font-size: 30px;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+    color:#000;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+@keyframes modalOpen{
+    from{opacity: 0} 
+    to{opacity: 1}
+}
