@@ -1,22 +1,20 @@
-# Memory Game Project
+# Memory Game Application
 
-## Table of Contents
+A card application for fun memory game.
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+## How to use
+You can run locally: 
 
-## Instructions
+```
+clone repository
+$ cd FEND-PROJECT-MEMORY-GAME
+$ open index.html 
+```
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+## Features
 
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
-# memory-game
-# memory-game
+- Users can click to show cards
+- Users can view matched cards
+- Users are timed 
+- Moves can cost stars 
+- Users are shown results at the end of the game
