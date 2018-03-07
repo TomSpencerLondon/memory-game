@@ -11,6 +11,7 @@ let matchedCount = 0;
 let stars = 3;
 let seconds; 
 
+
 /*
  * Display the cards on the page
  *   - shuffle the list of cards using the provided "shuffle" method below
